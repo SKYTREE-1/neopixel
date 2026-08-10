@@ -18,6 +18,12 @@ MakeCode でこのリポジトリを編集します。
 * **読み込む** をクリックし、 **URLから読み込む...** をクリックしてください
 * **https://github.com/skytree-1/neopixel** を貼り付けてインポートをクリックしてください
 
+
+* [チュートリアル](/neopixel/tutorial) [開始](https://makecode.microbit.org/#tutorial:github:SKYTREE-1/neopixel/tutorial)
+
+...
+
+
 #### メタデータ (検索、レンダリングに使用)
 
 * for PXT/microbit
