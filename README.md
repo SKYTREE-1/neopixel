@@ -3,23 +3,16 @@
 
 ## 拡張機能として使用
 
-このリポジトリは、MakeCode で **拡張機能** として追加できます。
+このリポジトリは、MakeCode の **チュートリアル** を提供します。
 
-* [https://makecode.microbit.org/](https://makecode.microbit.org/) を開く
-* **新しいプロジェクト** をクリックしてください
-* ギアボタンメニューの中にある **拡張機能** をクリックしてください
-* **https://github.com/skytree-1/neopixel** を検索してインポートします。
 
 ## このプロジェクトを編集します
 
 MakeCode でこのリポジトリを編集します。
 
-* [https://makecode.microbit.org/](https://makecode.microbit.org/) を開く
-* **読み込む** をクリックし、 **URLから読み込む...** をクリックしてください
-* **https://github.com/skytree-1/neopixel** を貼り付けてインポートをクリックしてください
 
-
-* [チュートリアル](/neopixel/tutorial) [開始](https://makecode.microbit.org/#tutorial:github:SKYTREE-1/neopixel/tutorial)
+* [チュートリアルを見る](/neopixel/tutorial)
+* [開始](https://makecode.microbit.org/#tutorial:github:SKYTREE-1/neopixel/tutorial)
 
 ...
 
