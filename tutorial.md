@@ -20,7 +20,7 @@ neopixel=github:microsoft/pxt-neopixel
   - GND → GND  
   - P0 → DIN  
 
-👉 赤い線は電気、黒か緑の線はマイナス、それ以外の線は信号  
+👉 手元のテープLEDの端子をよく確認して接続してください。  
 
 ![配線図](https://www.kodai.uec.ac.jp/sk/make-code/np/img_wiring.png)
 
@@ -162,7 +162,7 @@ strip = neopixel.create(DigitalPin.P0, 4, NeoPixelMode.RGB)
 ![流れる光のイメージ](https://www.kodai.uec.ac.jp/sk/make-code/np/img_flowing.png)
 
 ## ライトウェーブ１
-``||input:入力||`` から ``||input:ゆさぶられたとき||`` をだして、``||neopixel:NeoPixel||`` のその他にある ``||neopixel:strip の（0）番目を[赤]色に設定する||`` を、いれる。０番目は、一番 micro:bit に近いLEDのことです。（色は自由に変更していいです。）
+``||input:入力||`` から ``||input:ゆさぶられたとき||`` をだして、``||neopixel:NeoPixel||`` の『その他』にある ``||neopixel:strip の（0）番目を[赤]色に設定する||`` をいれる。０番目は、一番 micro:bit に近いLEDのことです。（色は自由に変更していいです。）
 
 ```blocks
 input.onGesture(Gesture.Shake, function () {
@@ -173,7 +173,7 @@ let strip: neopixel.Strip = null
 
 
 ## ライトウェーブ２
-同じように``||neopixel:strip の（0）番目を[赤]色に設定する||`` を使って、１番目～３番目のLEDの色を設定してください。色は自由に決めてください。
+同じように``||neopixel:strip の（0）番目を[赤]色に設定する||`` を追加して、１番目～３番目のLEDの色を設定してください。色は自由に決めてください。
 
 ```blocks
 input.onGesture(Gesture.Shake, function () {
@@ -231,7 +231,7 @@ input.onGesture(Gesture.Shake, function () {
 ```
 
 ## ライトウェーブ6
-追加した  ``||loops:くりかえし（4）回||`` の中に ``||neopixel:NeoPixel||``　の ``||neopixel:strip に設定されている色をLED（1）個分ずらす（ひとまわり）||`` と``||neopixel:strip を設定した色で点灯する||`` をいれる。そして、``||basic:一時停止（ミリ秒） 100||`` をいれ、「100」 を「500」にかえる。
+追加した  ``||loops:くりかえし（4）回||`` の中に ``||neopixel:NeoPixel||``　の ``||neopixel:strip に設定されている色をLED（1）個分ずらす（ひとまわり）||`` と``||neopixel:strip を設定した色で点灯する||`` をいれる。そして、``||loops:くりかえし（4）回||``  の、「4」 を「20」にかえる。
 
 ```blocks
 input.onGesture(Gesture.Shake, function () {
@@ -240,7 +240,7 @@ input.onGesture(Gesture.Shake, function () {
     strip.setPixelColor(2, neopixel.colors(NeoPixelColors.Blue))
     strip.setPixelColor(3, neopixel.colors(NeoPixelColors.Violet))
     strip.show()
-    for (let index = 0; index < 4; index++) {
+    for (let index = 0; index < 20; index++) {
         strip.rotate(1)
         strip.show()
     }
@@ -248,7 +248,7 @@ input.onGesture(Gesture.Shake, function () {
 let strip: neopixel.Strip = null
 ```
 ## ライトウェーブ7
-追加した  ``||loops:くりかえし（4）回||`` の中の一番下に、``||basic:一時停止（ミリ秒） 100||`` をいれ、「100」 を「500」にかえる。
+追加した  ``||loops:くりかえし（20）回||`` の中の一番下に、``||basic:一時停止（ミリ秒） 100||`` をいれ、「100」 を「500」にかえる。
 
 ```blocks
 input.onGesture(Gesture.Shake, function () {
@@ -257,7 +257,7 @@ input.onGesture(Gesture.Shake, function () {
     strip.setPixelColor(2, neopixel.colors(NeoPixelColors.Blue))
     strip.setPixelColor(3, neopixel.colors(NeoPixelColors.Violet))
     strip.show()
-    for (let index = 0; index < 4; index++) {
+    for (let index = 0; index < 20; index++) {
         strip.rotate(1)
         strip.show()
         basic.pause(500)
@@ -277,7 +277,7 @@ input.onGesture(Gesture.Shake, function () {
     strip.setPixelColor(2, neopixel.colors(NeoPixelColors.Blue))
     strip.setPixelColor(3, neopixel.colors(NeoPixelColors.Violet))
     strip.show()
-    for (let index = 0; index < 4; index++) {
+    for (let index = 0; index < 20; index++) {
         strip.rotate(1)
         strip.show()
         basic.pause(500)
@@ -319,7 +319,7 @@ let strip: neopixel.Strip = null
 
 ---
 
-## 4. もっと工夫しよう（自由な活動・15分）@showdialog
+## 4. もっと工夫しよう @showdialog
 
 さいごは、じぶんのすきな色や光りかたをつかって、じゆうにあそんでみよう！
 
